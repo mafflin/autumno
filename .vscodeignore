@@ -1,0 +1,9 @@
+.vscode/**
+src/**
+*.vsix
+dist/**
+node_modules/**
+images/icon.svg
+images/screenshots/**
+**/.DS_Store
+.gitignore

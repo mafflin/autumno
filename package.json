@@ -1,0 +1,56 @@
+{
+  "name": "autumno",
+  "displayName": "Autumno",
+  "description": "A warm, muted autumn dark theme for VS Code.",
+  "version": "0.1.2",
+  "publisher": "mafflin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafflin/autumno.git"
+  },
+  "homepage": "https://github.com/mafflin/autumno#readme",
+  "bugs": {
+    "url": "https://github.com/mafflin/autumno/issues"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "autumn",
+    "warm",
+    "retro",
+    "dark",
+    "theme",
+    "color-theme"
+  ],
+  "galleryBanner": {
+    "color": "#201C1A",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "Autumno Dark",
+        "label": "Autumno Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/autumno-dark.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node src/build.js",
+    "screenshots": "node src/screenshots.js",
+    "vscode:prepublish": "node src/build.js",
+    "package": "node -e \"require('fs').mkdirSync('dist',{recursive:true})\" && npx --yes @vscode/vsce package --out dist/",
+    "publish:vscode": "npx --yes @vscode/vsce publish",
+    "publish:openvsx": "npx --yes ovsx publish"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}
