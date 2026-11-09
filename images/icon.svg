@@ -1,16 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
   <rect x="8" y="8" width="240" height="240" rx="52" fill="#201C1A"/>
   <defs>
-    <linearGradient id="fall" gradientUnits="userSpaceOnUse" x1="150" y1="300" x2="1100" y2="1000">
-      <stop offset="0" stop-color="#FFA305"/>
-      <stop offset="0.35" stop-color="#F07A5E"/>
-      <stop offset="0.7" stop-color="#E64F37"/>
-      <stop offset="1" stop-color="#BC6E98"/>
-    </linearGradient>
+    <path id="leaf" d="M633,34 L685,140 L721,167 L727,233 L802,229 L788,364 L807,422 L916,369 L959,319 L969,368 L991,377 L1123,342 L1065,509 L1136,532 L1001,736 L1144,815 L1044,890 L1004,961 L827,986 L836,1070 L728,1037 L598,935 L392,1053 L329,1058 L366,932 L167,910 L185,839 L30,740 L255,650 L113,496 L150,459 L109,387 L131,352 L115,277 L270,319 L316,297 L377,375 L479,436 L497,391 L473,233 L498,199 L542,198 L552,141 L591,129 Z"/>
+    <clipPath id="s1"><path d="M598,885 L688,-1485 L2059,-690 Z"/></clipPath>
+    <clipPath id="s2"><path d="M598,885 L2059,-690 L2104,675 Z"/></clipPath>
+    <clipPath id="s3"><path d="M598,885 L2104,675 L1840,1815 Z"/></clipPath>
+    <clipPath id="s4"><path d="M598,885 L1840,1815 L-830,1695 Z"/></clipPath>
+    <clipPath id="s5"><path d="M598,885 L-830,1695 L-971,450 Z"/></clipPath>
+    <clipPath id="s6"><path d="M598,885 L-971,450 L-746,-870 Z"/></clipPath>
+    <clipPath id="s7"><path d="M598,885 L-746,-870 L688,-1485 Z"/></clipPath>
   </defs>
-  <g transform="translate(128 131) scale(0.186) translate(-587 -582)">
+  <g transform="translate(128 131) scale(0.186) translate(-583 -582) rotate(-2.17 598 885)">
     <path d="M598,900 Q605,1010 578,1130" fill="none" stroke="#b54230" stroke-width="22" stroke-linecap="round"/>
-    <path d="M633,34 L685,140 L721,167 L727,233 L802,229 L788,364 L807,422 L916,369 L959,319 L969,368 L991,377 L1123,342 L1065,509 L1136,532 L1001,736 L1144,815 L1044,890 L1004,961 L827,986 L836,1070 L728,1037 L598,935 L392,1053 L329,1058 L366,932 L167,910 L185,839 L30,740 L255,650 L113,496 L150,459 L109,387 L131,352 L115,277 L270,319 L316,297 L377,375 L479,436 L497,391 L473,233 L498,199 L542,198 L552,141 L591,129 Z" fill="url(#fall)"/>
+    <use href="#leaf" clip-path="url(#s1)" fill="#F07A5E"/>
+    <use href="#leaf" clip-path="url(#s2)" fill="#FFA305"/>
+    <use href="#leaf" clip-path="url(#s3)" fill="#E0BE5A"/>
+    <use href="#leaf" clip-path="url(#s4)" fill="#75C178"/>
+    <use href="#leaf" clip-path="url(#s5)" fill="#59B8C0"/>
+    <use href="#leaf" clip-path="url(#s6)" fill="#7396CD"/>
+    <use href="#leaf" clip-path="url(#s7)" fill="#CC86AA"/>
     <path d="M611,885 L631,95 L625,95 L585,885 Z M608,877 L152,298 L148,302 L588,893 Z M608,894 L1087,362 L1083,358 L588,876 Z M601,872 L76,737 L74,743 L595,898 Z M600,898 L1100,818 L1100,812 L596,872 Z M594,877 L359,1017 L361,1023 L602,893 Z M593,892 L803,1042 L807,1038 L603,878 Z M620,447 L492,249 L488,251 L609,454 Z M620,455 L792,252 L788,248 L609,446 Z M381,591 L302,314 L298,316 L367,594 Z M354,557 L141,468 L139,472 L349,570 Z M848,625 L927,386 L923,384 L835,620 Z M868,603 L1101,527 L1099,523 L864,590 Z M335,806 L199,848 L201,852 L338,819 Z M368,816 L252,664 L248,666 L357,824 Z M848,857 L1040,882 L1040,878 L850,843 Z M828,859 L987,732 L983,728 L820,848 Z" fill="#833629"/>
   </g>
 </svg>
